@@ -1,9 +1,9 @@
-const db = require("../data/schemes.db3");
+const dbConfig = require("../data/db-config");
 
 module.exports ={
     find,
 }
 
 function find() {
-    return db("schemes")
+    return dbConfig("schemes")
 }
